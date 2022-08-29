@@ -28,4 +28,4 @@ jobs:
             linux/arm64
           tags: |
             quay.io/vexxhost/bindep-loci:latest
-            quay.io/vexxhost/bindep-loci:${{ env.LOCI_TAG }}
+            quay.io/vexxhost/bindep-loci:${{ env.LOCI_SHA1 }}
