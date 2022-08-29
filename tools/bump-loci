@@ -1,0 +1,8 @@
+#!/bin/bash -xe 
+
+LATEST_SHA1=$(
+  curl -s https://opendev.org/api/v1/repos/openstack/loci/branches/master \ |
+    jq -r '.commit.id'
+)
+
+sed -i s%LOCI_SHA1=.*%LOCI_SHA1=${LATEST_SHA1}% Dockerfile
