@@ -1,6 +1,6 @@
 FROM quay.io/vexxhost/bindep:v2.11.0
 
-ARG LOCI_SHA1=2537db07aa3a3836cd215281e2fe2aa7923706b0
+ARG LOCI_SHA1=8ac5d338dbb9d989f30f459cbc083a4e2324e540
 ADD https://opendev.org/openstack/loci/raw/commit/${LOCI_SHA1}/bindep.txt /bindep.txt
 ADD https://opendev.org/openstack/loci/raw/commit/${LOCI_SHA1}/pydep.txt /pydep.txt
 
