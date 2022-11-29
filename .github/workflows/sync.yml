@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3.1.0
       - run: ./tools/bump-loci
-      - uses: peter-evans/create-pull-request@v4.2.1
+      - uses: peter-evans/create-pull-request@v4.2.3
         with:
           commit-message: Automated OpenStack LOCI versions bump
           branch: auto/bump-openstack-loci
